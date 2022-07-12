@@ -1,3 +1,3 @@
-module github.com/VorobevNickolay/LeetCode
+module LeetCode
 
 go 1.18
