@@ -1,6 +1,4 @@
-package main
-
-import "fmt"
+package Leet
 
 func moveZeroes(nums []int) {
 	nulls := 0
@@ -10,9 +8,4 @@ func moveZeroes(nums []int) {
 			nulls++
 		}
 	}
-}
-func main() {
-	arr := []int{0, 1, 0, 3, 1}
-	moveZeroes(arr)
-	fmt.Print(arr)
 }

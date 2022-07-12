@@ -1,4 +1,4 @@
-package main
+package Leet
 
 type ListNode struct {
 	Val  int
@@ -15,7 +15,4 @@ func middleNode(head *ListNode) *ListNode {
 		head_copy = head_copy.Next.Next
 	}
 	return head
-}
-func main() {
-
 }
