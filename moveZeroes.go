@@ -1,4 +1,4 @@
-package Leet
+package LeetCode
 
 func moveZeroes(nums []int) {
 	nulls := 0
