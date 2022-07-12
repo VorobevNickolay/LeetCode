@@ -8,6 +8,7 @@ func TestRomanToInt(t *testing.T) {
 		str  string
 		want int
 	}{
+		{"0", " ", 0},
 		{"Two", "II", 2},
 		{"Four", "IV", 4},
 		{"58", "LVIII", 58},
