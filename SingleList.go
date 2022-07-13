@@ -1,11 +1,15 @@
 package LeetCode
 
+//ListNode of SingleList and funcs for convert array to list and list to array
 type ListNode struct {
 	Val  int
 	Next *ListNode
 }
 
 func ArrayToList(nums []int) *ListNode {
+	if len(nums) == 0 {
+		return nil
+	}
 	m := make([]ListNode, len(nums))
 	for i, num := range nums {
 		m[i].Val = num
@@ -17,6 +21,9 @@ func ArrayToList(nums []int) *ListNode {
 }
 
 func ListToArray(head *ListNode) []int {
+	if head == nil {
+		return []int{}
+	}
 	var arr []int
 	for head != nil {
 		arr = append(arr, head.Val)
@@ -26,6 +33,9 @@ func ListToArray(head *ListNode) []int {
 }
 
 func ListWithCycle(nums []int, pos int) *ListNode {
+	if len(nums) == 0 {
+		return nil
+	}
 	m := make([]ListNode, len(nums))
 	for i, num := range nums {
 		m[i].Val = num
@@ -33,7 +43,9 @@ func ListWithCycle(nums []int, pos int) *ListNode {
 	for i := 0; i < len(nums)-1; i++ {
 		m[i].Next = &m[i+1]
 	}
-	m[len(nums)-1].Next = &m[pos]
+	if pos != -1 {
+		m[len(nums)-1].Next = &m[pos]
+	}
 	return &m[0]
 }
 func ListTest(nums []int) bool {

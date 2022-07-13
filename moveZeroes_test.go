@@ -18,7 +18,7 @@ func Test_moveZeroes(t *testing.T) {
 		{"zero", args{[]int{0}}, []int{0}},
 		{"already_sorted", args{[]int{1, 0}}, []int{1, 0}},
 		{"without nulls", args{[]int{1}}, []int{1}},
-		{"death to the living", args{[]int{0, 0, 0, 1}}, []int{1, 0, 0, 0}},
+		{"One at the end", args{[]int{0, 0, 0, 1}}, []int{1, 0, 0, 0}},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {

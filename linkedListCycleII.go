@@ -1,15 +1,15 @@
 package LeetCode
 
-func detectCycle(head *ListNode) *ListNode {
+func detectCycle(head *ListNode) int {
 	if head != nil {
 		m := make(map[*ListNode]bool)
 		for head.Next != nil {
 			if _, ok := m[head]; ok {
-				return head
+				return head.Val
 			}
 			m[head] = true
 			head = head.Next
 		}
 	}
-	return nil
+	return -1
 }
