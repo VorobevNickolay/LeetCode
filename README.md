@@ -7,3 +7,9 @@ Two sum II Input Array Is Sorted : https://leetcode.com/problems/two-sum-ii-inpu
 Linked List Cycle II: https://leetcode.com/problems/linked-list-cycle-ii/
 
 Roman to integer: https://leetcode.com/problems/roman-to-integer/
+
+Reverse String: https://leetcode.com/problems/reverse-string/
+
+Reverse words in string III: https://leetcode.com/problems/reverse-words-in-a-string-iii/
+
+Longest Palindrome: https://leetcode.com/problems/longest-palindrome
