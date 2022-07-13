@@ -1,10 +1,5 @@
 package LeetCode
 
-type ListNode struct {
-	Val  int
-	Next *ListNode
-}
-
 func middleNode(head *ListNode) *ListNode {
 	head_copy := head
 	for head_copy != nil {
