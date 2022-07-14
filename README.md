@@ -1,4 +1,11 @@
+Hi! This is my tutorial repository! 
+It contains solutions of problems from leetcode.com and some structures to test them on PC
 
+| Structure | Code | 
+| ---------------------- | ------------- |
+| Linked List  | https://github.com/VorobevNickolay/LeetCode/blob/main/SingleList.go |
+| Tree  | https://github.com/VorobevNickolay/LeetCode/blob/main/TreeStruct.go  |
+| Binary Tree  | https://github.com/VorobevNickolay/LeetCode/blob/main/BinaryTreeStruct.go  |
 
 |Problem's name | Leetcode Link | Solution |
 | ---------------------- | ------------- | -------------  |
