@@ -18,3 +18,17 @@ func binaryTreeHeight(root *BinaryTreeNode) int {
 		return r + 1
 	}
 }
+
+/*
+func ArrayToBinaryTree(arr []int) *BinaryTreeNode {
+	var head, headCopy *BinaryTreeNode
+	for i, num := range arr {
+		if num != -1 {
+			head.Val = num
+		} else {
+			head = nil
+		}
+
+	}
+}
+*/
