@@ -20,3 +20,4 @@ It contains solutions of problems from leetcode.com and some structures to test 
 | Reverse Linked List  |  https://leetcode.com/problems/palindrome-linked-list/  | https://github.com/VorobevNickolay/LeetCode/blob/main/reverseLinkedList.go |
 | Remove Nth Node From End of List  | https://leetcode.com/problems/remove-nth-node-from-end-of-list/  | https://github.com/VorobevNickolay/LeetCode/blob/main/renoveNthNodeFromEndOfList.go |
 | Binary Tree Level Order Traversal  | https://leetcode.com/problems/n-ary-tree-preorder-traversal/  | https://github.com/VorobevNickolay/LeetCode/blob/main/rn-aryTreePreorderTraversal.go |
+|  Validate Binary Search Tree  | https://leetcode.com/problems/validate-binary-search-tree/  | https://github.com/VorobevNickolay/LeetCode/blob/main/isValidBinarySearchTree.go |
