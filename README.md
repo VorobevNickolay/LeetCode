@@ -22,3 +22,4 @@ It contains solutions of problems from leetcode.com and some structures to test 
 | Binary Tree Level Order Traversal  | https://leetcode.com/problems/n-ary-tree-preorder-traversal/  | https://github.com/VorobevNickolay/LeetCode/blob/main/rn-aryTreePreorderTraversal.go |
 |  Validate Binary Search Tree  | https://leetcode.com/problems/validate-binary-search-tree/  | https://github.com/VorobevNickolay/LeetCode/blob/main/isValidBinarySearchTree.go |
 | Lowest Common Ancestor of a Binary Search Tree | https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree | https://github.com/VorobevNickolay/LeetCode/blob/main/lowestCommonAncestorOfBinarySearchTree.go|
+| Permutation in String | https://leetcode.com/problems/permutation-in-string | https://github.com/VorobevNickolay/LeetCode/blob/main/permutationInString.go|
