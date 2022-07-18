@@ -19,6 +19,7 @@ func checkInclusion(s1 string, s2 string) bool {
 		m[chr]++
 		m1[rune(s2[i])]++
 	}
+
 	for _, chr := range s1 {
 		if m[chr] != m1[chr] {
 			eq = false
