@@ -25,3 +25,5 @@ It contains solutions of problems from leetcode.com and some structures to test 
 | Permutation in String | [link](https://leetcode.com/problems/permutation-in-string) | [Solution](https://github.com/VorobevNickolay/LeetCode/blob/main/permutationInString.go)|
 | Flood Fill | [link](https://leetcode.com/problems/flood-fill/) | [Solution](https://github.com/VorobevNickolay/LeetCode/blob/main/floodFill.go)|
 | Number of Islands | [link](https://leetcode.com/problems/number-of-islands/) | [Solution](https://github.com/VorobevNickolay/LeetCode/blob/main/numberOfIslands.go)|
+| Merge Two Binary Tree | [link](https://leetcode.com/problems/merge-two-binary-trees/) | [Solution](https://github.com/VorobevNickolay/LeetCode/blob/main/mergeTwoBinaryTree.go)|
+| Max Area of Island | [link](https://leetcode.com/problems/max-area-of-island/) | [Solution](https://github.com/VorobevNickolay/LeetCode/blob/main/maxAreaOfIsland.go)|
