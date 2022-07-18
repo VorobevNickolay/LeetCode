@@ -1,26 +1,27 @@
 package LeetCode
 
-import (
-	"unicode/utf8"
-)
-
 func lengthOfLongestSubstring(s string) int {
 	m := make(map[rune]int)
-	i := 0
-	res := 0
-	sLen := utf8.RuneCountInString(s)
-	if sLen == 0 || sLen == 1 {
-		return sLen
-	}
-	for j := 0; j < sLen; j++ {
-		if m[rune(s[j])] > i {
-			i = m[rune(s[j])]
-		}
-		if j-i > res {
-			res = j - i
-		}
-		m[rune(s[j])] = j
 
+	res := 0
+	cur := 0
+	start := 0
+
+	for idx, chr := range s {
+		j, ok := m[chr]
+		if !ok || j < idx-cur {
+			cur++
+		} else {
+			if cur > res {
+				res = cur
+			}
+			start = j + 1
+			cur = idx - start + 1
+		}
+		m[chr] = idx
+	}
+	if cur > res {
+		res = cur
 	}
 	return res
 }
