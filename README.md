@@ -23,3 +23,5 @@ It contains solutions of problems from leetcode.com and some structures to test 
 |  Validate Binary Search Tree  | [link](https://leetcode.com/problems/validate-binary-search-tree/)  | [Solution](https://github.com/VorobevNickolay/LeetCode/blob/main/isValidBinarySearchTree.go) |
 | Lowest Common Ancestor of a Binary Search Tree | [link](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree) | [Solution](https://github.com/VorobevNickolay/LeetCode/blob/main/lowestCommonAncestorOfBinarySearchTree.go)|
 | Permutation in String | [link](https://leetcode.com/problems/permutation-in-string) | [Solution](https://github.com/VorobevNickolay/LeetCode/blob/main/permutationInString.go)|
+| Flood Fill | [link](https://leetcode.com/problems/flood-fill/) | [Solution](https://github.com/VorobevNickolay/LeetCode/blob/main/floodFill.go)|
+| Number of Islands | [link](https://leetcode.com/problems/number-of-islands/) | [Solution](https://github.com/VorobevNickolay/LeetCode/blob/main/numberOfIslands.go)|
