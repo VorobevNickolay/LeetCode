@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func Test_twoSum(t *testing.T) {
+func Test_twoSum2(t *testing.T) {
 	type args struct {
 		numbers []int
 		target  int
@@ -21,8 +21,8 @@ func Test_twoSum(t *testing.T) {
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			if got := twoSum(tt.args.numbers, tt.args.target); !reflect.DeepEqual(got, tt.want) {
-				t.Errorf("twoSum() = %v, want %v", got, tt.want)
+			if got := twoSum2(tt.args.numbers, tt.args.target); !reflect.DeepEqual(got, tt.want) {
+				t.Errorf("twoSum2() = %v, want %v", got, tt.want)
 			}
 		})
 	}

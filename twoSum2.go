@@ -1,6 +1,6 @@
 package LeetCode
 
-func twoSum(numbers []int, target int) []int {
+func twoSum2(numbers []int, target int) []int {
 	bigId := len(numbers) - 1
 	littleId := 0
 	for littleId != bigId {

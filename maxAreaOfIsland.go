@@ -4,22 +4,22 @@ func IslandArea(grid *[][]int, m *[][]bool, r, c int) int {
 	(*m)[r][c] = true
 	area := 1
 	if r != 0 {
-		if (*grid)[r-1][c] == 1 && (*m)[r-1][c] == false {
+		if (*grid)[r-1][c] == 1 && !(*m)[r-1][c] {
 			area += IslandArea(grid, m, r-1, c)
 		}
 	}
 	if c != 0 {
-		if (*grid)[r][c-1] == 1 && (*m)[r][c-1] == false {
+		if (*grid)[r][c-1] == 1 && !(*m)[r][c-1] {
 			area += IslandArea(grid, m, r, c-1)
 		}
 	}
 	if r != len(*grid)-1 {
-		if (*grid)[r+1][c] == 1 && (*m)[r+1][c] == false {
+		if (*grid)[r+1][c] == 1 && !(*m)[r+1][c] {
 			area += IslandArea(grid, m, r+1, c)
 		}
 	}
 	if c != len((*grid)[r])-1 {
-		if (*grid)[r][c+1] == 1 && (*m)[r][c+1] == false {
+		if (*grid)[r][c+1] == 1 && !(*m)[r][c+1] {
 			area += IslandArea(grid, m, r, c+1)
 		}
 	}
@@ -34,7 +34,7 @@ func maxAreaOfIsland(grid [][]int) int {
 	}
 	for i := range grid {
 		for j := range grid[i] {
-			if grid[i][j] == 1 && m[i][j] == false {
+			if grid[i][j] == 1 && !m[i][j] {
 				a = IslandArea(&grid, &m, i, j)
 				if a > res {
 					res = a

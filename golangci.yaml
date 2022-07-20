@@ -1,0 +1,35 @@
+linters:
+  # See available linter here. https://golangci-lint.run/usage/linters/
+  enable-all: true
+  disable:
+    - gochecknoglobals # Using globals for prometheus counters (global shared context)
+    - lll # hard to fulfill
+    - maligned # not worth it atm.
+    - varnamelen # Checks lengths of variablesjk
+    - wrapcheck # Checks that you wrap all your errors with `fmt.Errorf()`
+    - testpackage # Checks that you use the `_test` suffix for your tests
+    - forbidigo # Can be used to forbid some code
+    - funlen # Detects too long functions
+    - exhaustivestruct # Forces you to explicitly add all fields to a struct
+    - paralleltest # Forces you to allow all your tests to run in parallel
+    - nlreturn # New line before return
+    - wsl # Forces you to add black lines in some places to make the code easier to read
+    - ireturn # Don't allow to return interfaces
+    - containedctx # How to work with ctx
+    - golint # Deprecated
+    - interfacer # Deprecated
+    - scopelint # Deprecated
+
+    # custom deactivations for this project
+    - goerr113 # prevents the use of hard-coded error strings
+    - gomnd # prevents using hard-coded non-defined constant numbers in code
+    - thelper # forces you to pre-declare helpers in tests
+    - errorlint # Forces errors.Is and errors.As
+    - gofumpt # Brutal formatting Nazi
+    - gomoddirectives # fails for some reason
+  linters-settings:
+    errcheck:
+      ignore: fmt:.*
+
+  run:
+    modules-download-mode: vendor
