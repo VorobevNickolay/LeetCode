@@ -1,7 +1,6 @@
 package LeetCode
 
 import (
-	"fmt"
 	"unicode/utf8"
 )
 
@@ -34,8 +33,6 @@ func checkInclusion(s1 string, s2 string) bool {
 		j = i + s1Len
 		m1[rune(s2[i])]--
 		m1[rune(s2[j])]++
-		fmt.Println(m, m1)
-		fmt.Println(i, j)
 		for _, chr := range s1 {
 			if m[chr] != m1[chr] {
 				eq = false
